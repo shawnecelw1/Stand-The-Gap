@@ -4,17 +4,17 @@ title: Contact
 permalink: /contact/
 ---
 
-If you’d like to connect, please submit the form below and we’ll respond as soon as possible.
+If you’d like to connect with **Stand The Gap**, please complete the form below and we will respond as soon as possible.
 
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<form action="https://formspree.io/f/mkovwnyn" method="POST">
   <label>
-    Your name<br>
+    Name<br>
     <input type="text" name="name" required>
   </label>
   <br><br>
 
   <label>
-    Your email<br>
+    Email<br>
     <input type="email" name="email" required>
   </label>
   <br><br>
@@ -31,8 +31,16 @@ If you’d like to connect, please submit the form below and we’ll respond as 
   </label>
   <br><br>
 
-  <!-- Optional: prevents spam bots -->
+  <!-- Spam protection -->
   <input type="text" name="_gotcha" style="display:none">
+
+  <!-- Optional redirect after submit -->
+  <input type="hidden" name="_next" value="https://www.standthegap.info/thanks/">
 
   <button type="submit">Send Message</button>
 </form>
+
+---
+
+**Important:**  
+If this message is related to an urgent crisis, please contact **988 (Suicide & Crisis Lifeline)** or local emergency services immediately.
