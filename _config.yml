@@ -1,4 +1,7 @@
-yml
 title: Stand The Gap
-description: Bridging crisis, grief, and co
+description: Bridging crisis, grief, and community support
 theme: minima
+
+header_pages:
+  - index.md
+  - services.md
