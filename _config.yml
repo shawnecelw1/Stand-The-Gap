@@ -4,7 +4,6 @@ theme: minima
 
 header_pages:
   - index.md
-  - services.md
   - referral.md
   - pilot-model.md
   - contact.md
