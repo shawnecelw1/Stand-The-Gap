@@ -23,5 +23,5 @@ To provide compassionate, culturally responsive support during moments of crisis
 ---
 
 ## Contact
-📧 Email: info@standthegap.info  
+📧 Email: inquiry@standthegap.info  
 📍 Minnesota
