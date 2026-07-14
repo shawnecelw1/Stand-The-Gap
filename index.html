@@ -108,31 +108,107 @@
     </div>
   </div>
 
-  <header class="hero">
-    <div class="wrap">
-      <div class="heroGrid">
-        <section class="headline">
-          <div class="kicker">Trauma-informed • Culturally responsive • MN</div>
-          <h2>Standing with families after violent loss.</h2>
-          <p>Rapid, trauma-informed crisis response and grief stabilization following homicide and violent death—supporting families while strengthening county and municipal public safety systems.</p>
-          <div class="heroBtns">
-            <a class="btn" href="#counties">View County Pilot Model</a>
-          </div>
-        </section>
+  <header class="site-header">
+  <div class="container nav">
 
-        <aside class="panel">
-          <h3>What we provide</h3>
-          <ul>
-            <li><strong>Post-incident outreach</strong> and family stabilization</li>
-            <li><strong>Grief support</strong> with short-term follow-up</li>
-            <li><strong>System navigation</strong> and referrals</li>
-            <li><strong>Flexible models:</strong> 90-day pilots, on-call, retainer</li>
-          </ul>
-          <div class="mini"><strong>Emergency:</strong> Call 911. Crisis support: <strong>988</strong>.</div>
-        </aside>
-      </div>
-    </div>
-  </header>
+    <a class="brand" href="index.html">
+      Stand The Gap
+      <span>Homicide &amp; Grief Crisis Management</span>
+    </a>
+
+   menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: var(--navy);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .nav {
+    position: relative;
+    min-height: 72px;
+  }
+
+  .menu-toggle {
+    display: block;
+
+   <script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", isOpen);
+  });
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+</script>
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 0 0 14px 14px;
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 14px 12px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-links a:last-child {
+    border-bottom: 0;
+  }
+
+  .nav-links .referral-button {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .brand {
+    max-width: 240px;
+  }
+}
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html#services">Services</a>
+      <a href="first-72-hours.html">Family Guide</a>
+      <a href="our-impact.html">Our Impact</a>
+      <a href="academy.html">Academy</a>
+      <a href="index.html#partner">Partner With Us</a>
+      <a class="referral-button" href="index.html#referral">Make a Referral</a>
+    </nav>
+
+  </div>
+</header>
+
 
   <main>
     <section id="services" class="section">
