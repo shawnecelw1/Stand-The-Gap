@@ -363,6 +363,47 @@
       font-size: 0.93rem;
     }
 
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: var(--navy);
+      font-size: 2rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .mobile-menu {
+      display: none;
+      padding: 0 4% 14px;
+      border-top: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    .mobile-menu.open {
+      display: block;
+    }
+
+    .mobile-menu a {
+      display: block;
+      padding: 13px 4px;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .mobile-menu .mobile-cta {
+      margin-top: 10px;
+      border: 0;
+      border-radius: 10px;
+      text-align: center;
+      background: var(--taupe);
+      color: var(--navy-dark);
+    }
+
     @media (max-width: 950px) {
       .quick-grid,
       .steps-grid {
@@ -375,6 +416,10 @@
 
       .nav-links {
         display: none;
+      }
+
+      .menu-toggle {
+        display: block;
       }
     }
 
@@ -399,25 +444,37 @@
 
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="https://url.usb.m.mimecastprotect.com/s/2FL-C7DqAVcNlEyJU8fXfocIUO?domain=index.html">
+      <a class="brand" href="index.html">
         Stand The Gap
         <span>Homicide &amp; Grief Crisis Management</span>
       </a>
 
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="https://url.usb.m.mimecastprotect.com/s/VlNEC8Xr9Kcq1OQKT1hkfy7EvY?domain=index.html">Services</a>
-        <a class="active" href="https://url.usb.m.mimecastprotect.com/s/GgyVC93v2YuqQRxpT3ilfqvJt4?domain=first-72-hours.html">Family Guide</a>
-        <a href="https://url.usb.m.mimecastprotect.com/s/Yqp0C0Aj9DiBVJ4LIWs9f9vvuU?domain=our-impact.html">Our Impact</a>
-        <a href="https://url.usb.m.mimecastprotect.com/s/MwSXCg7WkMFy9PN7sEtwf44taN?domain=academy.html">Academy</a>
-        <a href="https://url.usb.m.mimecastprotect.com/s/BXoGCjAWn6im8lAvhnuKfmsNWL?domain=index.html">Partner With Us</a>
-        <a class="referral-button" href="https://url.usb.m.mimecastprotect.com/s/M5EVCk6WoXuB9Y4pIkC5fGW9Dp?domain=index.html">Make a Referral</a>
+        <a href="index.html#services">Services</a>
+        <a class="active" href="first-72-hours.html">Family Guide</a>
+        <a href="our-impact.html">Our Impact</a>
+        <a href="academy.html">Academy</a>
+        <a href="index.html#counties">Partner With Us</a>
+        <a class="referral-button" href="referral.html">Make a Referral</a>
       </nav>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
     </div>
+
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a class="active" href="first-72-hours.html">Family Guide</a>
+      <a href="our-impact.html">Our Impact</a>
+      <a href="academy.html">Academy</a>
+      <a href="index.html#counties">Partner With Us</a>
+      <a class="mobile-cta" href="referral.html">Make a Referral</a>
+    </nav>
   </header>
 
   <section class="hero">
     <div class="container">
-      <div class="eyebrow">What to expect � where to begin � who can help</div>
+      <div class="eyebrow">What to expect • where to begin • who can help</div>
       <h1>Family Guide After Homicide</h1>
       <p>
         The first 72 hours can feel overwhelming. This guide offers practical
@@ -426,8 +483,8 @@
       </p>
 
       <div class="hero-actions">
-        <a class="button button-primary" href="https://url.usb.m.mimecastprotect.com/s/M5EVCk6WoXuB9Y4pIkC5fGW9Dp?domain=index.html">Request Support</a>
-        <a class="button button-secondary" href="https://url.usb.m.mimecastprotect.com/s/2FL-C7DqAVcNlEyJU8fXfocIUO?domain=index.html">Return Home</a>
+        <a class="button button-primary" href="referral.html">Request Support</a>
+        <a class="button button-secondary" href="index.html">Return Home</a>
       </div>
 
       <div class="urgent-note">
@@ -584,7 +641,7 @@
         </div>
 
         <div class="timeline-item">
-          <div class="timeline-label">Days 2�3</div>
+          <div class="timeline-label">Days 2–3</div>
           <div><strong>Begin planning and applications.</strong> Explore funeral assistance, contact the employer, and begin Crime Victims Reparations paperwork.</div>
         </div>
 
@@ -650,7 +707,7 @@
             Stand The Gap helps families navigate the practical and emotional
             aftermath of homicide with dignity, compassion, and clear guidance.
           </p>
-          <a class="button button-primary" href="https://url.usb.m.mimecastprotect.com/s/M5EVCk6WoXuB9Y4pIkC5fGW9Dp?domain=index.html">Request Support</a>
+          <a class="button button-primary" href="referral.html">Request Support</a>
         </section>
 
         <p class="disclaimer">
@@ -667,9 +724,30 @@
     <div class="container">
       <strong>Stand The Gap</strong>
       <p>Homicide &amp; Grief Crisis Management</p>
-      <p>Minnesota � County &amp; City Partnerships</p>
+      <p>Minnesota • County &amp; City Partnerships</p>
     </div>
   </footer>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".mobile-menu");
+
+    if (toggle && menu) {
+      toggle.addEventListener("click", function () {
+        const open = menu.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.textContent = open ? "✕" : "☰";
+      });
+
+      menu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          menu.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.textContent = "☰";
+        });
+      });
+    }
+  </script>
 
 </body>
 </html>
