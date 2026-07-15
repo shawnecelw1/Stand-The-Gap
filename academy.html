@@ -1,1 +1,160 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stand The Gap Academy</title><style>:root{--n:#0E2238;--n2:#183B5C;--g:#C49A5A;--c:#F7F6F3}body{margin:0;font-family:Arial;background:var(--c)}header{background:#fff;border-bottom:1px solid #ddd}.w{max-width:1100px;margin:auto;padding:0 18px}nav{display:flex;justify-content:space-between;align-items:center;min-height:72px}.links a{text-decoration:none;color:#222;margin-left:18px;font-weight:700}.btn{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:10px 15px;border-radius:10px}.hero{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:70px 18px}main{max-width:1100px;margin:auto;padding:40px 18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{background:#fff;border:1px solid #ddd;border-radius:14px;padding:20px}.call{margin-top:35px;background:var(--n);color:#fff;padding:28px;border-radius:16px}footer{background:var(--n);color:#fff;padding:30px 18px;margin-top:50px}.m{display:none}.t{display:none}@media(max-width:900px){.links{display:none}.t{display:block;border:0;background:none;font-size:2rem}.m.open{display:block}.m a{display:block;padding:10px 0;text-decoration:none;color:#222}}</style></head><body><header><div class="w"><nav><a href="index.html"><b>Stand The Gap Academy</b></a><div class="links"><a href="index.html">Home</a><a href="first-72-hours.html">Family Guide</a><a href="our-impact.html">Our Impact</a><a href="academy.html">Academy</a><a class="btn" href="referral.html">Referral</a></div><button class="t">☰</button></nav><div class="m"><a href="index.html">Home</a><a href="first-72-hours.html">Family Guide</a><a href="our-impact.html">Our Impact</a><a href="academy.html">Academy</a><a href="referral.html">Referral</a></div></div></header><section class="hero"><div class="w"><h1>Stand The Gap Academy</h1><p>Training, education, and consultation for professionals supporting families after homicide and violent loss.</p></div></section><main><h2>Who We Serve</h2><div class="grid"><div class="card"><h3>Social Workers</h3></div><div class="card"><h3>Law Enforcement</h3></div><div class="card"><h3>Hospitals</h3></div><div class="card"><h3>Community Partners</h3></div></div><h2>Upcoming Topics</h2><div class="grid"><div class="card">Trauma-Informed Homicide Response</div><div class="card">Crime Victims Reparations</div><div class="card">Court Advocacy</div><div class="card">Grief After Violent Loss</div></div><div class="call"><h2>Coming Soon</h2><p>Professional workshops, agency training, consultation, and CE opportunities.</p></div></main><footer><div class="w">Stand The Gap • Homicide &amp; Grief Crisis Management</div></footer><script>const t=document.querySelector(".t"),m=document.querySelector(".m");if(t){t.onclick=()=>{m.classList.toggle("open");t.textContent=m.classList.contains("open")?"✕":"☰";}}</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stand The Gap Academy</title>
+<meta name="description" content="Coming-soon education and training resources for trauma-informed homicide response.">
+
+<style>
+:root{
+  --navy:#1E3550;
+  --navy-dark:#172A40;
+  --navy-soft:#F1F3F5;
+  --gold:#C7B79D;
+  --gold-dark:#A89476;
+  --nude:#F3EEE7;
+  --sand:#DDD1C2;
+  --brown:#7B6C60;
+  --brown-dark:#5F5147;
+  --ink:#30343A;
+  --muted:#5E6673;
+  --line:#DDD9D2;
+  --white:#FFFFFF;
+  --cream:#F7F6F3;
+  --shadow:0 16px 42px rgba(30,53,80,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+a{color:inherit}
+.container{width:min(1140px,92%);margin:auto}
+.site-header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 0}
+.brand{text-decoration:none;color:var(--navy);font-size:1.35rem;font-weight:900;line-height:1.1}
+.brand span{display:block;color:var(--brown);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-top:5px}
+.nav-links{display:flex;gap:17px;align-items:center;flex-wrap:wrap}
+.nav-links a{text-decoration:none;font-weight:800;font-size:.9rem}
+.nav-links a:hover,.nav-links a.active{color:var(--navy)}
+.nav-links .cta{background:var(--gold);color:var(--navy-dark);padding:10px 14px;border-radius:8px}
+.hero{background:linear-gradient(135deg,var(--navy-dark),var(--navy));color:#fff;padding:78px 0 70px}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-weight:900;font-size:.8rem;color:#D6C7AF}
+h1{font-size:clamp(2.35rem,5vw,4.35rem);line-height:1.06;margin:.45rem 0 1.1rem}
+.hero p{font-size:1.15rem;max-width:790px;color:#F4F1EC}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-block;text-decoration:none;font-weight:900;border-radius:9px;padding:13px 19px}
+.btn-primary{background:var(--gold);color:var(--navy-dark)}
+.btn-secondary{border:1px solid rgba(255,255,255,.65);color:#fff}
+.alert{margin-top:28px;border-left:5px solid var(--gold);background:rgba(255,255,255,.1);padding:16px 18px;border-radius:8px}
+main{padding:58px 0}
+.section-heading{max-width:800px;margin-bottom:28px}
+.section-heading h2{font-size:clamp(1.8rem,3vw,2.65rem);color:var(--navy);margin:0 0 9px}
+.section-heading p{color:var(--muted);font-size:1.05rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
+.card h3{color:var(--navy);margin:0 0 9px;font-size:1.22rem}
+.card p{margin:0;color:var(--muted)}
+.card ul{padding-left:20px;margin-bottom:0}
+.number{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:900;margin-bottom:14px}
+.band{background:var(--navy-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:50px 0;margin:56px 0}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;text-align:center;box-shadow:var(--shadow)}
+.kpi strong{display:block;font-size:2rem;color:var(--navy)}
+.kpi span{color:var(--brown);font-weight:700}
+.callout{background:var(--navy);color:#fff;border-radius:18px;padding:32px;margin-top:36px}
+.callout h2{margin-top:0;color:#fff}
+.callout p{color:#F4F1EC}
+.tag{display:inline-block;background:var(--nude);color:var(--brown);border:1px solid var(--sand);padding:5px 10px;border-radius:999px;font-size:.8rem;font-weight:900}
+.resource-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.resource{background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px;font-weight:800;color:var(--navy)}
+.disclaimer{font-size:.9rem;color:var(--muted);margin-top:30px}
+.site-footer{background:var(--navy-dark);color:#fff;padding:34px 0;margin-top:46px}
+.site-footer p{color:#DDD8D1;margin:5px 0}
+@media(max-width:900px){.grid,.kpis{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}}
+@media(max-width:620px){.grid,.kpis,.resource-list{grid-template-columns:1fr}.hero{padding:55px 0}.card{padding:21px}}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Stand The Gap
+      <span>Homicide &amp; Grief Crisis Management</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html#services">Services</a>
+      <a href="first-72-hours.html">First 72 Hours</a>
+      <a href="our-impact.html">Our Impact</a>
+      <a href="academy.html">Academy</a>
+      <a href="index.html#partner">Partner With Us</a>
+      <a class="cta" href="index.html#referral">Make a Referral</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Education and professional development</div>
+    <h1>Stand The Gap Academy</h1>
+    <p>A developing education hub for professionals and communities supporting families affected by homicide and violent loss.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="index.html#partner">Partner With Us</a>
+      <a class="btn btn-secondary" href="index.html">Return Home</a>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+  <div class="card" style="background:linear-gradient(135deg,#fff,var(--nude));">
+    <span class="tag">COMING SOON</span>
+    <div class="section-heading" style="margin-top:15px">
+      <h2>Building practical, trauma-informed homicide response capacity</h2>
+      <p>Stand The Gap Academy is being developed to provide education, professional development, and practical tools for people and organizations supporting families after homicide and violent loss.</p>
+    </div>
+  </div>
+
+  <section style="margin-top:42px">
+    <div class="section-heading"><h2>Future learning pathways</h2></div>
+    <div class="grid">
+      <article class="card"><h3>Social workers and advocates</h3><ul><li>Responding to homicide loss</li><li>Crisis stabilization</li><li>Family and benefits navigation</li><li>Court advocacy fundamentals</li></ul></article>
+      <article class="card"><h3>Hospitals and health systems</h3><ul><li>Emergency-department family support</li><li>Post-homicide discharge planning</li><li>Resource coordination</li><li>Trauma-informed communication</li></ul></article>
+      <article class="card"><h3>Law enforcement and counties</h3><ul><li>Supporting families beyond notification</li><li>Referral pathways</li><li>Long-term family needs</li><li>Cross-system collaboration</li></ul></article>
+      <article class="card"><h3>Schools and youth programs</h3><ul><li>Childhood traumatic grief</li><li>Supporting students after violence</li><li>Family collaboration</li><li>Community resource connection</li></ul></article>
+      <article class="card"><h3>Funeral professionals</h3><ul><li>Trauma-informed family meetings</li><li>Victim-benefit awareness</li><li>Communication after violent death</li><li>Resource referral practices</li></ul></article>
+      <article class="card"><h3>Community organizations</h3><ul><li>Homicide response planning</li><li>Survivor advocacy</li><li>Compassion fatigue prevention</li><li>Community healing coordination</li></ul></article>
+    </div>
+  </section>
+
+  <section class="band" style="margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)">
+    <div class="container">
+      <div class="section-heading"><h2>Future resources</h2><p>Planned resources will translate complicated systems into practical guidance.</p></div>
+      <div class="resource-list">
+        <div class="resource">First 72 Hours Checklist</div>
+        <div class="resource">Crime Victims Reparations Guide</div>
+        <div class="resource">Employer Benefits Checklist</div>
+        <div class="resource">Court Process Guide</div>
+        <div class="resource">Children's Grief Resource Guide</div>
+        <div class="resource">Professional Response Toolkits</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="callout">
+    <h2>Interested in future training or partnership?</h2>
+    <p>Counties, hospitals, law-enforcement agencies, schools, funeral professionals, and community organizations may contact Stand The Gap regarding future education and consultation opportunities.</p>
+    <a class="btn btn-primary" href="index.html#partner">Partner With Us</a>
+  </section>
+  <p class="disclaimer">Stand The Gap Academy is in development. No certification, continuing-education credit, or formal credential is currently being represented or offered through this page.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <strong>Stand The Gap</strong>
+    <p>Homicide &amp; Grief Crisis Management</p>
+    <p>Minnesota • County &amp; City Partnerships</p>
+  </div>
+</footer>
+
+</body>
+</html>
